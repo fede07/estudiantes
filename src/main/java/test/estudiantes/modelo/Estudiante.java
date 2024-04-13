@@ -1,6 +1,7 @@
 package test.estudiantes.modelo;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -16,7 +17,7 @@ import lombok.ToString;
 
 public class Estudiante {
     @Id
-    @generatedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idEstudiante;
     private String nombre;
     private String apellido;
